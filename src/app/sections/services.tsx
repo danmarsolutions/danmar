@@ -35,7 +35,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="min-h-screen flex flex-col gap-32"
+      className="min-h-screen flex flex-col gap-32 mb-32"
     >
       <div className="flex flex-col gap-8">
         <Badge
@@ -49,7 +49,7 @@ export default function Services() {
           animation="slideUp"
           by="word"
           duration={0.5}
-          className="font-bold text-7xl"
+          className="font-bold text-6xl"
         >
           Design. Develop. Deploy.
         </TextAnimate>
@@ -118,7 +118,7 @@ export default function Services() {
           as="h3"
           by="word"
           animation="blurIn"
-          className="font-semibold text-5xl text-center"
+          className="font-semibold text-4xl text-center"
           delay={0.8}
           duration={0.8}
         >

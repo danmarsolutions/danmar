@@ -10,13 +10,13 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="h-screen flex items-center bg-transparent relative w-screen left-1/2 right-1/2 -mx-[50vw]"
+      className="h-screen flex items-center bg-transparent relative w-screen left-1/2 right-1/2 -mx-[50vw] mb-32"
     >
       <div className="grid grid-cols-2 max-w-7xl mx-auto w-full px-8">
-        <div className="col-span-2 xl:col-span-1 z-10">
+        <div className="col-span-2 lg:col-span-1 z-10">
           <div className="mb-16">
             <TextAnimate
-              className="text-7xl font-bold mb-8"
+              className="text-6xl font-bold mb-8"
               animation="slideUp"
               by="word"
               as="h1"
