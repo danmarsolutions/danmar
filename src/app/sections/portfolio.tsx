@@ -45,7 +45,7 @@ export default function Portfolio() {
   return (
     <section
       id="portfolio"
-      className="min-h-screen flex flex-col gap-24 items-center"
+      className="min-h-screen flex flex-col gap-24 items-center mb-32"
     >
       <div className="w-2/3 flex flex-col gap-8 items-center text-center">
         <Badge
