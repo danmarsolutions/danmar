@@ -88,7 +88,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="h-[60vh] rounded-xl bg-[url('/vrguyoutside.jpg')] bg-container bg-no-repeat bg-cover relative"
+      className="h-[60vh] rounded-xl bg-[url('/vrguyoutside.jpg')] bg-container bg-no-repeat bg-cover relative mb-32"
     >
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 grid grid-cols-5 gap-8 h-full p-10">

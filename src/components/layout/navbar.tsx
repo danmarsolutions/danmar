@@ -46,7 +46,7 @@ export default function Navbar() {
     return () => observer.disconnect();
   }, []);
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 backdro-blur-lg bg-background/70">
+    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-background/70">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between p-4">
           <Image
