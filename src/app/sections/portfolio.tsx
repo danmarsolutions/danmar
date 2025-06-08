@@ -77,7 +77,7 @@ export default function Portfolio() {
           businesses thrive in the digital landscape.
         </TextAnimate>
       </div>
-      <CustomCarousel controlPosition="top">
+      <CustomCarousel controlPosition="bottom">
         {showcaseItems.map((item, index) => {
           return (
             <div
@@ -114,8 +114,9 @@ export default function Portfolio() {
                 {item.link && (
                   <Button
                     variant="pill-secondary"
+                    size="pill"
                     asChild
-                    className="w-fit"
+                    className="w-fit font-medium hover:[&_svg]:rotate-45 [&_svg]:transition-all"
                   >
                     <Link href={item.link} target="_blank">
                       Check it out <ArrowUpRight />
