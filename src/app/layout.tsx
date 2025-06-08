@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter_Tight, Koulen } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/navbar";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const interTight = Inter_Tight({
   variable: "--font-inter-tight",
@@ -43,6 +45,8 @@ export default function RootLayout({
       >
         <Navbar />
         <main className="max-w-7xl mx-auto px-8">{children}</main>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
