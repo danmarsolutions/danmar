@@ -49,7 +49,7 @@ export default function Services() {
           animation="slideUp"
           by="word"
           duration={0.5}
-          className="font-bold text-6xl"
+          className="font-bold text-4xl lg:text-6xl"
         >
           Design. Develop. Deploy.
         </TextAnimate>
@@ -59,7 +59,7 @@ export default function Services() {
           delay={0.6}
           duration={1}
           by="word"
-          className="text-lg tracking-tight w-2/3"
+          className="text-base lg:text-lg tracking-tight w-2/3"
         >
           From stunning visuals that captivate your audience to
           powerful, responsive websites engineered for peak
@@ -67,12 +67,12 @@ export default function Services() {
           includes:
         </TextAnimate>
       </div>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {services.map((service, index) => {
           return (
             <motion.div
               key={index}
-              className="rounded-lg border border-foreground/20 p-10 flex flex-col justify-between min-h-[412px]"
+              className="rounded-lg border border-foreground/20 p-10 flex flex-col justify-between min-h-80 lg:min-h-[412px]"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{
                 opacity: 1,
@@ -86,16 +86,19 @@ export default function Services() {
               }}
               viewport={{ amount: 0.8 }}
             >
-              <div className="mb-20">
-                <h3 className="mb-6 font-semibold text-4xl">
+              <div>
+                <h3 className="mb-6 font-semibold text-3xl lg:text-4xl">
                   {service.title}
                 </h3>
-                <p className="text-lg">{service.description}</p>
+                <p className="text-base lg:text-lg">
+                  {service.description}
+                </p>
               </div>
               <Image
                 src={service.imageSrc}
                 height={80}
                 width={80}
+                className="lg:size-20 size-16"
                 alt="Icon"
               />
             </motion.div>
@@ -112,13 +115,13 @@ export default function Services() {
           }}
           viewport={{ amount: 0.8 }}
         >
-          <Quote className="size-8 fill-foreground rotate-180" />
+          <Quote className="size-6 lg:size-8 fill-foreground rotate-180" />
         </motion.div>
         <TextAnimate
           as="h3"
           by="word"
           animation="blurIn"
-          className="font-semibold text-4xl text-center"
+          className="font-semibold text-2xl lg:text-4xl text-center"
           delay={0.8}
           duration={0.8}
         >
@@ -134,7 +137,7 @@ export default function Services() {
           }}
           viewport={{ amount: 0.8 }}
         >
-          <Quote className="size-8 fill-foreground" />
+          <Quote className="size-6 lg:size-8 fill-foreground" />
         </motion.div>
       </div>
     </section>

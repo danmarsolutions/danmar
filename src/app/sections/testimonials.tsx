@@ -33,9 +33,9 @@ export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="min-h-screen flex flex-col gap-24 items-center"
+      className="min-h-screen flex flex-col gap-24 items-center mb-32"
     >
-      <div className="w-2/3 flex flex-col gap-8 items-center text-center">
+      <div className="w-full lg:w-2/3 flex flex-col gap-8 items-center text-center">
         <Badge
           variant="secondary"
           className="rounded-full font-semibold px-4 py-1"
@@ -47,7 +47,7 @@ export default function Testimonials() {
           animation="slideUp"
           by="word"
           duration={0.5}
-          className="font-bold text-6xl"
+          className="font-bold text-4xl lg:text-6xl"
         >
           Trusted by Visionaries
         </TextAnimate>
@@ -59,12 +59,12 @@ export default function Testimonials() {
               key={index}
               className="p-10 border border-foreground/20 rounded-lg"
             >
-              <p className="text-2xl mb-24">
+              <p className="text-lg lg:text-2xl mb-12 lg:mb-24">
                 &quot;{t.testimonial}&quot;
               </p>
-              <div>
-                <p className="text-base font-semibold">{t.name}</p>
-                <p className="text-base">{t.position}</p>
+              <div className="text-sm lg:text-base">
+                <p className="font-semibold">{t.name}</p>
+                <p>{t.position}</p>
               </div>
             </div>
           );

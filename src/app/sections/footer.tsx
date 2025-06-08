@@ -27,16 +27,16 @@ export default function Footer() {
   };
   return (
     <footer id="footer">
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-4">
         <div className="flex flex-col gap-4">
           <Image
             src="/white-wordmark.png"
             width={1040}
             height={280}
             alt="Wordmark for Danmar Software Solutions"
-            className="w-80 h-auto"
+            className="w-60 lg:w-80 h-auto"
           />
-          <p className="max-w-80">
+          <p className="max-w-none lg:max-w-80">
             Effortless design, seamless development, and reliable
             hosting—all in one place.{" "}
           </p>

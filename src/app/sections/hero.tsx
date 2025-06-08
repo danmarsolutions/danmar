@@ -16,7 +16,7 @@ export default function Hero() {
         <div className="col-span-2 lg:col-span-1 z-10">
           <div className="mb-16">
             <TextAnimate
-              className="text-6xl font-bold mb-8"
+              className="text-4xl lg:text-6xl font-bold mb-8"
               animation="slideUp"
               by="word"
               as="h1"
@@ -25,7 +25,7 @@ export default function Hero() {
               Transform Your Vision into Digital Reality
             </TextAnimate>
             <TextAnimate
-              className="text-lg tracking-tight mb-8"
+              className="text-base lg:text-lg tracking-tight mb-8"
               as="p"
               animation="fadeIn"
               by="word"

@@ -47,7 +47,7 @@ export default function Portfolio() {
       id="portfolio"
       className="min-h-screen flex flex-col gap-24 items-center mb-32"
     >
-      <div className="w-2/3 flex flex-col gap-8 items-center text-center">
+      <div className="w-full lg:w-2/3 flex flex-col gap-8 items-center text-center">
         <Badge
           variant="secondary"
           className="rounded-full font-semibold px-4 py-1"
@@ -59,7 +59,7 @@ export default function Portfolio() {
           animation="slideUp"
           by="word"
           duration={0.5}
-          className="font-bold text-6xl"
+          className="font-bold text-4xl lg:text-6xl"
         >
           Innovation in Action
         </TextAnimate>
@@ -69,7 +69,7 @@ export default function Portfolio() {
           delay={0.6}
           duration={1}
           by="word"
-          className="text-lg tracking-tight"
+          className="text-base lg:text-lg tracking-tight"
         >
           Explore a selection of projects we&apos;ve proudly brought
           to life—each site meticulously designed and strategically
@@ -82,7 +82,7 @@ export default function Portfolio() {
           return (
             <div
               key={index}
-              className="grid grid-cols-3 gap-10 bg-card rounded-lg p-10"
+              className="grid grid-cols-1 lg:grid-cols-3 gap-10 bg-card rounded-lg p-10"
             >
               <div className="col-span-2 relative">
                 <div className="relative">
@@ -103,7 +103,7 @@ export default function Portfolio() {
                 </div>
               </div>
               <div className="flex flex-col justify-between">
-                <div>
+                <div className="lg:mb-0 mb-8">
                   <h4 className="font-semibold text-3xl mb-6">
                     {item.title}
                   </h4>

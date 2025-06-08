@@ -88,15 +88,15 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="h-[60vh] rounded-xl bg-[url('/vrguyoutside.jpg')] bg-container bg-no-repeat bg-cover relative mb-32"
+      className="min-h-[60vh] rounded-xl bg-[url('/vrguyoutside.jpg')] bg-container bg-no-repeat bg-cover relative mb-32"
     >
       <div className="absolute inset-0 bg-black/50" />
-      <div className="relative z-10 grid grid-cols-5 gap-8 h-full p-10">
+      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-5 gap-8 h-full p-10">
         <div className="col-span-2 flex flex-col gap-8 justify-center h-full">
-          <h2 className="text-5xl font-bold">
+          <h2 className="text-2xl lg:text-5xl font-bold">
             Let&apos;s Build Something Great
           </h2>
-          <p>
+          <p className="text-sm lg:text-base">
             Ready to elevate your business? Contact us today and
             discover how Danmar Software Solutions can accelerate your
             journey into the digital future.
@@ -123,7 +123,7 @@ export default function Contact() {
                 onSubmit={form.handleSubmit(onSubmit)}
                 className="flex flex-col gap-4"
               >
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                   <FormField
                     control={form.control}
                     name="name"

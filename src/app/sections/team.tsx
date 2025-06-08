@@ -55,7 +55,7 @@ export default function Team() {
       id="team"
       className="min-h-screen mb-32 flex flex-col gap-24"
     >
-      <div className="w-1/2 flex flex-col gap-8">
+      <div className="w-full lg:w-1/2 flex flex-col gap-8">
         <Badge
           variant="secondary"
           className="rounded-full font-semibold px-4 py-1"
@@ -67,7 +67,7 @@ export default function Team() {
           animation="slideUp"
           by="word"
           duration={0.5}
-          className="font-bold text-6xl"
+          className="font-bold text-4xl lg:text-6xl"
         >
           Built by the Best
         </TextAnimate>
@@ -77,7 +77,7 @@ export default function Team() {
           delay={0.6}
           duration={1}
           by="word"
-          className="text-lg tracking-tight"
+          className="text-base lg:text-lg tracking-tight"
         >
           At Danmar, our strength lies in our people. Our team
           comprises exceptional software engineers from Canada’s
@@ -86,7 +86,7 @@ export default function Team() {
           creativity and precision to every project.
         </TextAnimate>
       </div>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {teamMembers.map((member, index) => {
           return (
             <motion.div
@@ -177,13 +177,13 @@ export default function Team() {
           }}
           viewport={{ amount: 0.8 }}
         >
-          <Quote className="size-8 fill-foreground rotate-180" />
+          <Quote className="size-6 lg:size-8 fill-foreground rotate-180" />
         </motion.div>
         <TextAnimate
           as="h3"
           by="word"
           animation="blurIn"
-          className="font-semibold text-4xl text-center"
+          className="font-semibold text-2xl lg:text-4xl text-center"
           delay={0.8}
           duration={0.8}
         >
@@ -199,7 +199,7 @@ export default function Team() {
           }}
           viewport={{ amount: 0.8 }}
         >
-          <Quote className="size-8 fill-foreground" />
+          <Quote className="size-6 lg:size-8 fill-foreground" />
         </motion.div>
       </div>
     </section>
