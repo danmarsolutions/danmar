@@ -46,7 +46,7 @@ export default function Footer() {
               variant="outline"
               className="rounded-full"
             >
-              <Link href="#">
+              <Link href="https://www.linkedin.com/company/danmar-software-solutions">
                 <FaLinkedin /> LinkedIn
               </Link>
             </Button>

@@ -25,6 +25,7 @@ import {
 } from "@/components/ui/form";
 import { useState } from "react";
 import { ContactEmailBody } from "../api/email/contact/route";
+import Link from "next/link";
 
 // Define the form schema with zod
 const FormSchema = z.object({
@@ -102,9 +103,18 @@ export default function Contact() {
             journey into the digital future.
           </p>
           <div className="flex items-center gap-2">
-            <Button variant="outline" className="rounded-full">
-              <FaLinkedin />
-              LinkedIn
+            <Button
+              variant="outline"
+              asChild
+              className="rounded-full"
+            >
+              <Link
+                href="https://www.linkedin.com/company/danmar-software-solutions"
+                target="_blank"
+              >
+                <FaLinkedin />
+                LinkedIn
+              </Link>
             </Button>
           </div>
         </div>
