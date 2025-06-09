@@ -36,7 +36,7 @@ export default function CustomCarousel({
 
   const controls = (
     <div className="w-full flex items-center justify-between">
-      <div className="w-80 h-2 bg-card relative rounded-full">
+      <div className="w-50 lg:w-80 h-2 bg-card relative rounded-full">
         <div
           className="absolute top-0 left-0 h-full bg-foreground rounded-full transition-all duration-500"
           style={{

@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaBehance, FaGithub, FaLinkedin } from "react-icons/fa";
 import { Quote } from "lucide-react";
+import { useMediaQuery } from "@uidotdev/usehooks";
 
 export type TeamMember = {
   role: string;
@@ -50,6 +51,7 @@ export default function Team() {
       behance: "https://www.behance.net/abubakershykh",
     },
   ];
+  const isLg = useMediaQuery("only screen and (min-width: 64rem)");
   return (
     <section
       id="team"
@@ -100,10 +102,10 @@ export default function Team() {
                   type: "spring",
                   bounce: 0.4,
                   duration: 0.5,
-                  delay: index * 0.5,
+                  delay: isLg ? index * 0.5 : 0,
                 },
               }}
-              viewport={{ amount: 0.8 }}
+              viewport={{ amount: 0.8, once: true }}
             >
               <div className="flex flex-col gap-6 pb-12">
                 <div className="text-sm rounded-md w-fit italic px-4 py-2 border border-foreground">

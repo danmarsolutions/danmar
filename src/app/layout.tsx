@@ -27,10 +27,18 @@ const koulen = Koulen({
   weight: "400",
 });
 
+const description =
+  "Transform your vision into digital reality. We specialize in sleek, high-performance, websites crafted specifically to elevate your business.";
+
 export const metadata: Metadata = {
-  title: "Danmar Softare Solutions.",
-  description:
-    "Transform your vision into digital reality. We specialize in sleek, high-performance, websites crafted specifically to elevate your business.",
+  title: "Danmar Softare Solutions",
+  description,
+  openGraph: {
+    type: "website",
+    description,
+    siteName: "danmarsolutions.ca",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({

@@ -1,8 +1,10 @@
+"use client";
 import * as motion from "motion/react-client";
 import { TextAnimate } from "@/components/magicui/text-animate";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import { Quote } from "lucide-react";
+import { useMediaQuery } from "@uidotdev/usehooks";
 
 type Service = {
   title: string;
@@ -32,6 +34,7 @@ const services: Service[] = [
 ];
 
 export default function Services() {
+  const isLg = useMediaQuery("only screen and (min-width: 64rem)");
   return (
     <section
       id="services"
@@ -81,10 +84,10 @@ export default function Services() {
                   type: "spring",
                   bounce: 0.4,
                   duration: 0.5,
-                  delay: index * 0.5,
+                  delay: isLg ? index * 0.5 : 0,
                 },
               }}
-              viewport={{ amount: 0.8 }}
+              viewport={{ amount: 0.8, once: true }}
             >
               <div>
                 <h3 className="mb-6 font-semibold text-3xl lg:text-4xl">
@@ -111,9 +114,9 @@ export default function Services() {
           initial={{ opacity: 0 }}
           whileInView={{
             opacity: 1,
-            transition: { duration: 0.3, delay: 0.5 },
+            transition: { duration: 0.3 },
           }}
-          viewport={{ amount: 0.8 }}
+          viewport={{ amount: 0.8, once: true }}
         >
           <Quote className="size-6 lg:size-8 fill-foreground rotate-180" />
         </motion.div>
@@ -122,8 +125,9 @@ export default function Services() {
           by="word"
           animation="blurIn"
           className="font-semibold text-2xl lg:text-4xl text-center"
-          delay={0.8}
+          delay={0.4}
           duration={0.8}
+          once
         >
           Experience the simplicity of having your web solutions
           expertly managed, end-to-end.
@@ -135,7 +139,7 @@ export default function Services() {
             opacity: 1,
             transition: { duration: 0.3, delay: 1.2 },
           }}
-          viewport={{ amount: 0.8 }}
+          viewport={{ amount: 0.8, once: true }}
         >
           <Quote className="size-6 lg:size-8 fill-foreground" />
         </motion.div>
