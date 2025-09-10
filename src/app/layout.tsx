@@ -31,7 +31,7 @@ const description =
   "Transform your vision into digital reality. We specialize in sleek, high-performance, websites crafted specifically to elevate your business.";
 
 export const metadata: Metadata = {
-  title: "Danmar Softare Solutions",
+  title: "Danmar Software Solutions",
   description,
   openGraph: {
     type: "website",
